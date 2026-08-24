@@ -1,10 +1,6 @@
 {
-  "appId": "sh.surge.folio.notes",
+  "appId": "com.folio.notes",
   "appName": "Folio",
-  "webDir": ".",
-  "bundledWebRuntime": false,
-  "server": {
-    "url": "https://folio-notes-tasks.surge.sh",
-    "cleartext": true
-  }
+  "webDir": "www",
+  "bundledWebRuntime": false
 }
