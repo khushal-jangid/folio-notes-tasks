@@ -36,6 +36,9 @@ jobs:
           npm install @capacitor/core @capacitor/cli @capacitor/android
           npx cap add android
           npx cap sync android
+          
+          # Fix Kotlin Duplicate Classes Conflict
+          sed -i 's/dependencies {/dependencies {\n    constraints {\n        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22")\n        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22")\n    }/g' android/app/build.gradle
 
       - name: 🔨 Compile Standalone APK with Gradle
         run: |
