@@ -812,9 +812,9 @@ class FolioApp {
           </div>
 
           <div class="flex items-center gap-2.5 flex-wrap pt-1">
-            <a href="./Folio.apk" download="Folio-v1.0.apk" class="btn-primary px-4 py-2 text-xs rounded-xl shadow-sm flex items-center gap-2">
+            <a href="./Folio-Standalone-Offline.apk" download="Folio-Standalone-Offline.apk" class="btn-primary px-4 py-2 text-xs rounded-xl shadow-sm flex items-center gap-2">
               <i class="fa-solid fa-download text-xs"></i>
-              <span>Download APK (885 KB)</span>
+              <span>Download Standalone APK (4.1 MB)</span>
             </a>
 
             <a href="./download.html" target="_blank" class="btn-secondary px-4 py-2 text-xs rounded-xl flex items-center gap-2 font-bold">
