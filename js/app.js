@@ -798,6 +798,32 @@ class FolioApp {
           </button>
         </div>
 
+        <!-- Android APK Download Banner -->
+        <div class="paper-card p-4 sm:p-6 space-y-3 bg-[var(--bg-card)] border-2 border-[var(--accent-terracotta)]/30">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <h3 class="font-serif font-bold text-base text-[var(--text-primary)] flex items-center gap-2">
+                <i class="fa-brands fa-android text-[var(--accent-terracotta)] text-base"></i>
+                <span>Folio Android App (.APK)</span>
+              </h3>
+              <p class="font-sans text-xs text-[var(--text-secondary)] mt-0.5">Install Folio directly on your smartphone as a standalone native app.</p>
+            </div>
+            <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-orange-500/10 text-[var(--accent-terracotta)]">v1.0.0</span>
+          </div>
+
+          <div class="flex items-center gap-2.5 flex-wrap pt-1">
+            <a href="./Folio.apk" download="Folio-v1.0.apk" class="btn-primary px-4 py-2 text-xs rounded-xl shadow-sm flex items-center gap-2">
+              <i class="fa-solid fa-download text-xs"></i>
+              <span>Download APK (885 KB)</span>
+            </a>
+
+            <a href="./download.html" target="_blank" class="btn-secondary px-4 py-2 text-xs rounded-xl flex items-center gap-2 font-bold">
+              <i class="fa-solid fa-qrcode text-xs text-[var(--accent-terracotta)]"></i>
+              <span>Scan QR / Download Page</span>
+            </a>
+          </div>
+        </div>
+
         <!-- Backup -->
         <div class="paper-card p-4 sm:p-6 space-y-3">
           <div>

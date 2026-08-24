@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Download Folio for Android — Paper Notes & Daily Planner</title>
+  
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="Download Folio Android APK. Modern paper-inspired notes, task manager, habit tracker, and audio alarms. 100% offline & private.">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Lora, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <style>
+    .hero-glow {
+      background: radial-gradient(circle at 50% 30%, rgba(194, 65, 12, 0.08) 0%, rgba(247, 244, 237, 0) 70%);
+    }
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: var(--bg-card);
+      border: 1px solid var(--border-medium);
+      color: var(--text-secondary);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+    .qr-card {
+      background: #ffffff;
+      padding: 12px;
+      border-radius: 16px;
+      border: 1px solid var(--border-medium);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      display: inline-block;
+    }
+  </style>
+</head>
+<body class="bg-[var(--bg-app)] text-[var(--text-primary)] antialiased paper-texture min-h-screen flex flex-col justify-between selection:bg-orange-100">
+
+  <!-- ================= TOP NAVIGATION ================= -->
+  <header class="border-b border-[var(--border-subtle)] bg-[var(--bg-app)]/90 backdrop-blur-md sticky top-0 z-40 px-4 sm:px-8 py-3.5 flex items-center justify-between">
+    <a href="./index.html" class="flex items-center gap-2.5">
+      <div class="w-8 h-8 rounded-xl btn-primary flex items-center justify-center shadow-sm">
+        <i class="fa-solid fa-book-bookmark text-xs"></i>
+      </div>
+      <div>
+        <span class="font-serif font-bold text-lg text-[var(--text-primary)]">Folio</span>
+        <span class="text-[10px] font-mono text-[var(--text-muted)] font-bold uppercase ml-1 tracking-wider">v1.0</span>
+      </div>
+    </a>
+
+    <div class="flex items-center gap-3">
+      <a href="./index.html" class="btn-secondary px-3.5 py-1.5 text-xs rounded-xl flex items-center gap-1.5 font-bold">
+        <span>Launch Web App</span>
+        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+      </a>
+      <a href="./Folio.apk" download="Folio-v1.0.apk" class="btn-primary px-4 py-1.5 text-xs rounded-xl shadow-sm flex items-center gap-1.5">
+        <i class="fa-brands fa-android text-xs"></i>
+        <span>Download APK</span>
+      </a>
+    </div>
+  </header>
+
+
+  <!-- ================= MAIN HERO SECTION ================= -->
+  <main class="flex-1 hero-glow px-4 sm:px-6 py-12 sm:py-16 max-w-4xl mx-auto w-full space-y-12">
+    
+    <!-- Hero Header -->
+    <div class="text-center space-y-4 max-w-2xl mx-auto">
+      
+      <div class="badge-pill">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>Native Android APK • Free & Open</span>
+      </div>
+
+      <h1 class="font-serif font-bold text-3xl sm:text-5xl text-[var(--text-primary)] tracking-tight leading-tight">
+        The paper notebook designed for your pocket.
+      </h1>
+
+      <p class="font-sans text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
+        Tactile notes, daily agendas, habit tracking, and deep focus audio chimes. Zero tracking, zero cloud leaks — 100% offline & private.
+      </p>
+
+      <!-- Main Download Action Box -->
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+        
+        <a href="./Folio.apk" download="Folio-v1.0.apk" class="w-full sm:w-auto btn-primary px-8 py-3.5 rounded-2xl shadow-lg flex items-center justify-center gap-3 text-sm transform hover:-translate-y-0.5 transition active:scale-95">
+          <i class="fa-brands fa-android text-lg"></i>
+          <div class="text-left">
+            <div class="font-bold text-sm leading-tight">Download APK for Android</div>
+            <div class="text-[10px] opacity-85 font-mono">v1.0.0 • Size: 885 KB • Direct Download</div>
+          </div>
+        </a>
+
+        <a href="./index.html" class="w-full sm:w-auto btn-secondary px-6 py-3.5 rounded-2xl flex items-center justify-center gap-2 text-xs font-bold transition">
+          <i class="fa-solid fa-globe text-sm text-[var(--accent-terracotta)]"></i>
+          <span>Use Web App in Browser</span>
+        </a>
+
+      </div>
+
+      <!-- Quick Install Note -->
+      <div class="text-[11px] font-mono text-[var(--text-muted)] flex items-center justify-center gap-4 flex-wrap pt-1 font-semibold">
+        <span><i class="fa-solid fa-shield-halved text-emerald-600 mr-1"></i> Verified Clean & Safe</span>
+        <span><i class="fa-solid fa-wifi-slash text-[var(--accent-terracotta)] mr-1"></i> 100% Offline Ready</span>
+        <span><i class="fa-solid fa-microchip text-blue-600 mr-1"></i> Android 7.0 to 16+</span>
+      </div>
+
+    </div>
+
+
+    <!-- ================= QR CODE & PHONE SCAN SECTION ================= -->
+    <div class="paper-card p-6 sm:p-8 bg-[var(--bg-card)] border-2 border-[var(--border-strong)] rounded-3xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6">
+      
+      <div class="space-y-2 text-center sm:text-left flex-1">
+        <span class="text-[10px] font-mono uppercase font-bold text-[var(--accent-terracotta)] tracking-wider">Fast Mobile Transfer</span>
+        <h3 class="font-serif font-bold text-xl text-[var(--text-primary)]">Scan with your phone to download</h3>
+        <p class="font-sans text-xs text-[var(--text-secondary)] leading-relaxed">
+          Point your phone camera at the QR code to download the APK file directly to your smartphone without typing the link.
+        </p>
+        <div class="pt-2 text-xs font-mono font-bold text-[var(--text-muted)] flex items-center gap-2 justify-center sm:justify-start">
+          <i class="fa-solid fa-link text-[var(--accent-terracotta)]"></i>
+          <span>folio-notes-tasks.surge.sh/Folio.apk</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="qr-card">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://folio-notes-tasks.surge.sh/Folio.apk&color=1e293b&bgcolor=ffffff" 
+               alt="Scan to download Folio APK" 
+               class="w-32 h-32 rounded-lg"
+               loading="lazy">
+        </div>
+        <span class="text-[10px] font-mono text-[var(--text-muted)] font-bold mt-2">Point Phone Camera</span>
+      </div>
+
+    </div>
+
+
+    <!-- ================= APP CAPABILITIES GRID ================= -->
+    <div class="space-y-4">
+      <div class="text-center">
+        <span class="text-[10px] font-mono uppercase font-bold text-[var(--text-muted)] tracking-widest">Thoughtfully Crafted</span>
+        <h2 class="font-serif font-bold text-2xl text-[var(--text-primary)]">Everything you need to stay organized</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        
+        <div class="paper-card p-5 space-y-2.5">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/15 text-[var(--accent-terracotta)] flex items-center justify-center text-base shadow-sm">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <h3 class="font-serif font-bold text-sm text-[var(--text-primary)]">Tactile Paper Notebook</h3>
+          <p class="font-sans text-xs text-[var(--text-secondary)] leading-relaxed">
+            Distraction-free ruled paper editor with checklist checkboxes, markdown syntax, and 1-click PDF export.
+          </p>
+        </div>
+
+        <div class="paper-card p-5 space-y-2.5">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/15 text-[var(--accent-amber)] flex items-center justify-center text-base shadow-sm">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <h3 class="font-serif font-bold text-sm text-[var(--text-primary)]">Acoustic Audio Chimes</h3>
+          <p class="font-sans text-xs text-[var(--text-secondary)] leading-relaxed">
+            Real background task alarms with customizable synthesized chime sounds: Acoustic Bell, Zen Bowl, and Typewriter.
+          </p>
+        </div>
+
+        <div class="paper-card p-5 space-y-2.5">
+          <div class="w-10 h-10 rounded-xl bg-green-500/15 text-[var(--accent-sage)] flex items-center justify-center text-base shadow-sm">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+          <h3 class="font-serif font-bold text-sm text-[var(--text-primary)]">Daily Habit Tracker</h3>
+          <p class="font-sans text-xs text-[var(--text-secondary)] leading-relaxed">
+            Track daily water, reading, or workouts with interactive streak calendars and visual habit matrices.
+          </p>
+        </div>
+
+        <div class="paper-card p-5 space-y-2.5">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/15 text-[var(--accent-indigo)] flex items-center justify-center text-base shadow-sm">
+            <i class="fa-solid fa-stopwatch"></i>
+          </div>
+          <h3 class="font-serif font-bold text-sm text-[var(--text-primary)]">Pomodoro Focus Timer</h3>
+          <p class="font-sans text-xs text-[var(--text-secondary)] leading-relaxed">
+            Deep work intervals with customizable focus and break sessions linked directly to your pending tasks.
+          </p>
+        </div>
+
+        <div class="paper-card p-5 space-y-2.5">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/15 text-[var(--accent-amber)] flex items-center justify-center text-base shadow-sm">
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <h3 class="font-serif font-bold text-sm text-[var(--text-primary)]">Private Secret Vault</h3>
+          <p class="font-sans text-xs text-[var(--text-secondary)] leading-relaxed">
+            Protect confidential notes with a secure 4-digit PIN lock. Everything stays encrypted locally on your device.
+          </p>
+        </div>
+
+        <div class="paper-card p-5 space-y-2.5">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/15 text-emerald-700 flex items-center justify-center text-base shadow-sm">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h3 class="font-serif font-bold text-sm text-[var(--text-primary)]">1-Click JSON Backup</h3>
+          <p class="font-sans text-xs text-[var(--text-secondary)] leading-relaxed">
+            Complete data sovereignty. Export and restore your full notebook database at any time with zero vendor lock-in.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ================= 3-STEP INSTALLATION GUIDE ================= -->
+    <div class="paper-card p-6 sm:p-8 bg-[var(--bg-card)] rounded-3xl border border-[var(--border-subtle)] space-y-5">
+      <div>
+        <span class="text-[10px] font-mono uppercase font-bold text-[var(--text-muted)] tracking-widest">Installation</span>
+        <h3 class="font-serif font-bold text-lg text-[var(--text-primary)]">How to install the APK on Android (3 Steps)</h3>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+        
+        <div class="space-y-1.5 p-3 rounded-2xl bg-[var(--bg-app)] border border-[var(--border-subtle)]">
+          <div class="font-mono text-xs font-bold text-[var(--accent-terracotta)]">01. Download</div>
+          <p class="text-[var(--text-secondary)]">Tap the <b>Download APK</b> button on your Android phone.</p>
+        </div>
+
+        <div class="space-y-1.5 p-3 rounded-2xl bg-[var(--bg-app)] border border-[var(--border-subtle)]">
+          <div class="font-mono text-xs font-bold text-[var(--accent-terracotta)]">02. Allow Install</div>
+          <p class="text-[var(--text-secondary)]">If Android asks <i>"Allow from this source"</i>, tap <b>Allow / Settings</b>.</p>
+        </div>
+
+        <div class="space-y-1.5 p-3 rounded-2xl bg-[var(--bg-app)] border border-[var(--border-subtle)]">
+          <div class="font-mono text-xs font-bold text-[var(--accent-terracotta)]">03. Launch Folio</div>
+          <p class="text-[var(--text-secondary)]">Tap <b>Install</b> and launch Folio from your app drawer!</p>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-[var(--border-subtle)] bg-[var(--bg-sidebar)] px-4 sm:px-8 py-6 text-center text-xs text-[var(--text-muted)] font-mono space-y-2">
+    <div class="flex items-center justify-center gap-4 flex-wrap">
+      <a href="./index.html" class="hover:text-[var(--text-primary)] transition">Web App</a>
+      <span>•</span>
+      <a href="./Folio.apk" download class="hover:text-[var(--text-primary)] transition">Folio.apk (885 KB)</a>
+      <span>•</span>
+      <a href="https://github.com/khushaljangra/folio-notes-tasks" target="_blank" class="hover:text-[var(--text-primary)] transition"><i class="fa-brands fa-github mr-1"></i>GitHub</a>
+    </div>
+    <div>Folio — Crafted with modern paper aesthetics • Free & Open Source</div>
+  </footer>
+
+</body>
+</html>
