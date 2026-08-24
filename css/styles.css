@@ -1,0 +1,614 @@
+/* =========================================================
+   FOLIO — MOBILE-FIRST PREMIUM PAPER & NOTEBOOK SYSTEM (V6)
+   100% Pure CSS Styling for High-Contrast Elements & Calendar
+   ========================================================= */
+
+/* 1. CLASSIC WARM PAPER (Default) */
+:root, [data-theme="paper"] {
+  --bg-app: #f7f4ed;
+  --bg-sidebar: #f0ebe0;
+  --bg-card: #ffffff;
+  --bg-card-hover: #fdfbf7;
+  --bg-input: #ffffff;
+  --bg-modal: #ffffff;
+  --bg-ruled: #e6dfce;
+  
+  --text-primary: #1e1a18;
+  --text-secondary: #4a433d;
+  --text-muted: #786f66;
+  --text-faint: #a89f94;
+  --text-accent: #110e0c;
+  
+  --border-subtle: #e6dfd1;
+  --border-medium: #d8cebe;
+  --border-strong: #b5a894;
+  --border-focus: #332923;
+  
+  --btn-primary-bg: #382c24;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #261e18;
+
+  --btn-secondary-bg: #ffffff;
+  --btn-secondary-text: #1e1a18;
+  --btn-secondary-border: #d8cebe;
+  --btn-secondary-hover: #f7f4ed;
+
+  --accent-leather: #382c24;
+  --accent-terracotta: #c2410c;
+  --accent-amber: #b45309;
+  --accent-sage: #15803d;
+  --accent-indigo: #3730a3;
+  
+  --calendar-today-bg: #c2410c;
+  --calendar-today-text: #ffffff;
+  --calendar-selected-bg: #382c24;
+  --calendar-selected-text: #ffffff;
+
+  --priority-high-bg: #fef2f2;
+  --priority-high-border: #fecaca;
+  --priority-high-text: #991b1b;
+  --priority-med-bg: #fffbeb;
+  --priority-med-border: #fde68a;
+  --priority-med-text: #92400e;
+  --priority-low-bg: #f0fdf4;
+  --priority-low-border: #bbf7d0;
+  --priority-low-text: #166534;
+
+  --shadow-paper-sm: 0 1px 2px rgba(60, 50, 40, 0.05), 0 1px 1px rgba(0, 0, 0, 0.02);
+  --shadow-paper-md: 0 4px 12px rgba(60, 50, 40, 0.06), 0 1px 3px rgba(60, 50, 40, 0.04);
+  --shadow-paper-lg: 0 12px 28px rgba(60, 50, 40, 0.09), 0 4px 10px rgba(60, 50, 40, 0.05);
+  --shadow-modal: 0 24px 48px -12px rgba(35, 25, 20, 0.22), 0 0 0 1px rgba(60, 50, 40, 0.08);
+
+  --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* 2. SAGE FOREST THEME */
+[data-theme="sage"] {
+  --bg-app: #f2f6f3;
+  --bg-sidebar: #e5ece6;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f9fbf9;
+  --bg-input: #ffffff;
+  --bg-modal: #ffffff;
+  --bg-ruled: #d5e2d7;
+  
+  --text-primary: #14241b;
+  --text-secondary: #394e41;
+  --text-muted: #627b6c;
+  --text-faint: #9cb2a3;
+  --text-accent: #0c1811;
+  
+  --border-subtle: #dbe5dd;
+  --border-medium: #c7d8ca;
+  --border-strong: #9fbba3;
+  --border-focus: #1b3524;
+  
+  --btn-primary-bg: #1b3524;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #122418;
+
+  --btn-secondary-bg: #ffffff;
+  --btn-secondary-text: #14241b;
+  --btn-secondary-border: #c7d8ca;
+  --btn-secondary-hover: #f2f6f3;
+
+  --accent-leather: #1b3524;
+  --accent-terracotta: #c2410c;
+  --accent-amber: #b45309;
+  --accent-sage: #15803d;
+  --accent-indigo: #2d5a7b;
+
+  --calendar-today-bg: #15803d;
+  --calendar-today-text: #ffffff;
+  --calendar-selected-bg: #1b3524;
+  --calendar-selected-text: #ffffff;
+}
+
+/* 3. NORDIC INDIGO THEME */
+[data-theme="indigo"] {
+  --bg-app: #f2f5f9;
+  --bg-sidebar: #e5ebf4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafe;
+  --bg-input: #ffffff;
+  --bg-modal: #ffffff;
+  --bg-ruled: #d5e0ee;
+  
+  --text-primary: #121d2d;
+  --text-secondary: #37465c;
+  --text-muted: #61738d;
+  --text-faint: #9aacc4;
+  --text-accent: #0b121d;
+  
+  --border-subtle: #dbe4f1;
+  --border-medium: #c6d5ea;
+  --border-strong: #9db5d7;
+  --border-focus: #1c304f;
+  
+  --btn-primary-bg: #1c304f;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #122035;
+
+  --btn-secondary-bg: #ffffff;
+  --btn-secondary-text: #121d2d;
+  --btn-secondary-border: #c6d5ea;
+  --btn-secondary-hover: #f2f5f9;
+
+  --accent-leather: #1c304f;
+  --accent-terracotta: #d97706;
+  --accent-amber: #d97706;
+  --accent-sage: #0d9488;
+  --accent-indigo: #2563eb;
+
+  --calendar-today-bg: #2563eb;
+  --calendar-today-text: #ffffff;
+  --calendar-selected-bg: #1c304f;
+  --calendar-selected-text: #ffffff;
+}
+
+/* 4. JAPANESE SAKURA THEME */
+[data-theme="sakura"] {
+  --bg-app: #fcf6f7;
+  --bg-sidebar: #f7ebed;
+  --bg-card: #ffffff;
+  --bg-card-hover: #fdf9fa;
+  --bg-input: #ffffff;
+  --bg-modal: #ffffff;
+  --bg-ruled: #edd6da;
+  
+  --text-primary: #2e1418;
+  --text-secondary: #5e373c;
+  --text-muted: #8e6268;
+  --text-faint: #c89ba2;
+  --text-accent: #1f0b0e;
+  
+  --border-subtle: #f2dadf;
+  --border-medium: #e8c6cc;
+  --border-strong: #cca1a8;
+  --border-focus: #591b24;
+  
+  --btn-primary-bg: #591b24;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #3d1017;
+
+  --btn-secondary-bg: #ffffff;
+  --btn-secondary-text: #2e1418;
+  --btn-secondary-border: #e8c6cc;
+  --btn-secondary-hover: #fcf6f7;
+
+  --accent-leather: #591b24;
+  --accent-terracotta: #be123c;
+  --accent-amber: #c2410c;
+  --accent-sage: #15803d;
+  --accent-indigo: #8b5cf6;
+
+  --calendar-today-bg: #be123c;
+  --calendar-today-text: #ffffff;
+  --calendar-selected-bg: #591b24;
+  --calendar-selected-text: #ffffff;
+}
+
+/* 5. MOLESKINE MIDNIGHT (Dark Charcoal) */
+[data-theme="dark"] {
+  --bg-app: #141210;
+  --bg-sidebar: #1c1916;
+  --bg-card: #221f1b;
+  --bg-card-hover: #292520;
+  --bg-input: #1a1714;
+  --bg-modal: #221f1b;
+  --bg-ruled: #2e2a24;
+  
+  --text-primary: #f5f0e6;
+  --text-secondary: #c5bba8;
+  --text-muted: #8e8372;
+  --text-faint: #5e5445;
+  --text-accent: #ffffff;
+  
+  --border-subtle: #2e2923;
+  --border-medium: #3d372f;
+  --border-strong: #544c42;
+  --border-focus: #e5dec9;
+  
+  --btn-primary-bg: #e8ded1;
+  --btn-primary-text: #141210;
+  --btn-primary-hover: #ffffff;
+
+  --btn-secondary-bg: #292520;
+  --btn-secondary-text: #f5f0e6;
+  --btn-secondary-border: #3d372f;
+  --btn-secondary-hover: #35302a;
+
+  --accent-leather: #e8ded1;
+  --accent-terracotta: #fb923c;
+  --accent-amber: #fbbf24;
+  --accent-sage: #4ade80;
+  --accent-indigo: #818cf8;
+
+  --calendar-today-bg: #ea580c;
+  --calendar-today-text: #ffffff;
+  --calendar-selected-bg: #e8ded1;
+  --calendar-selected-text: #141210;
+  
+  --shadow-paper-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-paper-md: 0 4px 14px rgba(0, 0, 0, 0.5);
+  --shadow-paper-lg: 0 12px 30px rgba(0, 0, 0, 0.6);
+  --shadow-modal: 0 24px 50px rgba(0, 0, 0, 0.8), 0 0 0 1px #38322b;
+
+  --priority-high-bg: rgba(153, 27, 27, 0.3);
+  --priority-high-border: rgba(239, 68, 68, 0.4);
+  --priority-high-text: #fca5a5;
+  --priority-med-bg: rgba(146, 64, 14, 0.3);
+  --priority-med-border: rgba(245, 158, 11, 0.4);
+  --priority-med-text: #fcd34d;
+  --priority-low-bg: rgba(22, 101, 52, 0.3);
+  --priority-low-border: rgba(34, 197, 94, 0.4);
+  --priority-low-text: #86efac;
+}
+
+/* Base Mobile App Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overscroll-behavior-y: contain;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  background-image: radial-gradient(var(--border-subtle) 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+/* Safe Area Inset Support */
+.safe-top {
+  padding-top: max(12px, env(safe-area-inset-top));
+}
+.safe-bottom {
+  padding-bottom: max(12px, env(safe-area-inset-bottom));
+}
+
+/* =====================================================
+   PURE CSS BUTTON SYSTEM (Never Depends on Tailwind JIT)
+   ===================================================== */
+.btn-primary {
+  background-color: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-text) !important;
+  border: 1px solid transparent !important;
+  font-weight: 700 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.15s ease !important;
+  cursor: pointer !important;
+  user-select: none !important;
+}
+.btn-primary, .btn-primary *, .btn-primary i, .btn-primary span {
+  color: var(--btn-primary-text) !important;
+}
+.btn-primary:active {
+  transform: scale(0.96) !important;
+}
+
+.btn-secondary {
+  background-color: var(--btn-secondary-bg) !important;
+  color: var(--btn-secondary-text) !important;
+  border: 1px solid var(--btn-secondary-border) !important;
+  font-weight: 700 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.15s ease !important;
+  cursor: pointer !important;
+  user-select: none !important;
+}
+.btn-secondary span {
+  color: var(--btn-secondary-text) !important;
+}
+.btn-secondary:active {
+  transform: scale(0.96) !important;
+}
+
+/* File Upload Button Pure CSS */
+input[type="file"]::file-selector-button {
+  background-color: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-text) !important;
+  font-weight: 700 !important;
+  padding: 6px 14px !important;
+  border-radius: 10px !important;
+  border: 0 !important;
+  font-size: 11px !important;
+  cursor: pointer !important;
+  margin-right: 10px !important;
+  transition: opacity 0.15s ease !important;
+}
+input[type="file"]::file-selector-button:active {
+  transform: scale(0.96) !important;
+}
+
+/* =====================================================
+   PURE CSS CALENDAR HIGHLIGHTS (Bold & Sharp Contrast)
+   ===================================================== */
+.cal-cell {
+  padding: 6px 2px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+.cal-cell-today {
+  background-color: var(--calendar-today-bg) !important;
+  color: var(--calendar-today-text) !important;
+  font-weight: 800 !important;
+  box-shadow: 0 2px 8px rgba(194, 65, 12, 0.4) !important;
+}
+.cal-cell-today span {
+  color: var(--calendar-today-text) !important;
+  font-weight: 800 !important;
+}
+
+.cal-cell-selected {
+  background-color: var(--calendar-selected-bg) !important;
+  color: var(--calendar-selected-text) !important;
+  font-weight: 800 !important;
+}
+.cal-cell-selected span {
+  color: var(--calendar-selected-text) !important;
+}
+
+.cal-cell-normal {
+  color: var(--text-primary);
+}
+.cal-cell-normal:hover {
+  background-color: var(--bg-app);
+}
+
+.cal-task-dot {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 9999px;
+  background-color: var(--accent-terracotta);
+}
+
+/* =====================================================
+   POMODORO TIMER TABS (Pure CSS)
+   ===================================================== */
+.pomo-tab-active {
+  background-color: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-text) !important;
+  font-weight: 800 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) !important;
+}
+.pomo-tab-active * {
+  color: var(--btn-primary-text) !important;
+}
+.pomo-tab-inactive {
+  color: var(--text-secondary) !important;
+  font-weight: 600 !important;
+  background: transparent !important;
+}
+.pomo-tab-inactive:hover {
+  color: var(--text-primary) !important;
+}
+
+/* =====================================================
+   MOBILE NAVIGATION & FAB
+   ===================================================== */
+.mobile-nav-bar {
+  display: flex !important;
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 40 !important;
+  background: var(--bg-card) !important;
+  border-top: 1px solid var(--border-medium) !important;
+  padding-bottom: max(6px, env(safe-area-inset-bottom)) !important;
+  padding-top: 6px !important;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.06) !important;
+}
+
+.mobile-nav-tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 2px;
+  color: var(--text-muted);
+  font-size: 10px;
+  font-weight: 600;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+.mobile-nav-tab.active {
+  color: var(--accent-terracotta) !important;
+  font-weight: 800 !important;
+}
+.mobile-nav-tab.active i {
+  transform: translateY(-2px);
+  color: var(--accent-terracotta) !important;
+}
+
+.mobile-fab-center {
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  background: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-text) !important;
+  margin-top: -24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  border: 3px solid var(--bg-card);
+  transition: transform 0.18s ease;
+  cursor: pointer;
+}
+.mobile-fab-center i {
+  color: var(--btn-primary-text) !important;
+}
+.mobile-fab-center:active {
+  transform: scale(0.92);
+}
+
+/* Mobile Bottom Sheet Modal Behavior */
+@media (max-width: 768px) {
+  .mobile-bottom-sheet {
+    align-items: flex-end !important;
+    padding: 0 !important;
+  }
+  .mobile-bottom-sheet > .paper-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 24px !important;
+    border-top-right-radius: 24px !important;
+    max-height: 92vh !important;
+    margin: 0 !important;
+    animation: slideUpModal 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+}
+
+@keyframes slideUpModal {
+  from {
+    transform: translateY(100%);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.drag-handle-pill {
+  width: 40px;
+  height: 4px;
+  border-radius: 9999px;
+  background: var(--border-strong);
+  margin: 8px auto 14px;
+  opacity: 0.6;
+}
+
+/* Paper Cards */
+.paper-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  box-shadow: var(--shadow-paper-sm);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  position: relative;
+}
+
+.paper-card.is-pinned {
+  border-top: 3px solid var(--accent-terracotta);
+}
+
+.notebook-ruled {
+  background-color: var(--bg-card);
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 27px,
+    var(--bg-ruled) 28px
+  );
+  line-height: 28px;
+}
+
+/* Checkbox */
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-strong);
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  display: inline-grid;
+  place-content: center;
+  transition: all 0.15s ease;
+  background: transparent;
+  flex-shrink: 0;
+}
+
+.custom-checkbox:checked {
+  background-color: var(--accent-sage);
+  border-color: var(--accent-sage);
+}
+
+.custom-checkbox:checked::before {
+  content: "✓";
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.task-completed .task-title {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-medium);
+  border-radius: 4px;
+}
+
+kbd {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  background: var(--bg-app);
+  border: 1px solid var(--border-medium);
+  box-shadow: 0 1px 0 var(--border-strong);
+  color: var(--text-secondary);
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.tag-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--bg-app);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.15s ease;
+}
+
+.modal-backdrop {
+  background: rgba(15, 12, 10, 0.65);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}

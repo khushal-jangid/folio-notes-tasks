@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "sh.surge.folio_notes_tasks.twa",
+    "sha256_cert_fingerprints": ["F1:16:D7:9B:63:72:25:55:44:40:7A:C6:7E:C3:73:C3:24:6F:30:12:B0:35:84:0A:8F:7D:84:03:0F:49:B9:8B"]
+  }
+}]
